@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import baseLayer.BaseClass;
 import pageLayer.LoginPage;
+import pageLayer.PimPage;
 
 public class LoginPageTest extends BaseClass{
 
@@ -24,6 +25,16 @@ public class LoginPageTest extends BaseClass{
 		loginPage.loginPageFunctionality("Admin", "admin123");
 	}
 	
+	@Test
+	public void validatePimPageFunctionality()
+	{
+		PimPage pimpage= new PimPage();
+		
+		pimpage.clickOnPimPage();
+		
+		
+		
+	}
 	@AfterTest
 	public void tearDown() throws InterruptedException
 	{
